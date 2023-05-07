@@ -81,7 +81,7 @@
                 }
                 return response.blob();
             }).then(function(response) {
-                if ( window.confirm("Tracks imported to your Beatport Link playlist 🥳🔊. Would you like me to email you when we update this little tool of magic?") ) {
+                if ( window.confirm("Tracks imported to your Beatport Link playlist ðŸ¥³ðŸ”Š. Would you like me to email you when we update this little tool of magic?") ) {
                     fetch("https://hooks.zapier.com/hooks/catch/106993/oou76ox/silent/?email="+encodeURIComponent(window.Beatport.user.email_address)+"&name="+encodeURIComponent(window.Beatport.user.name.first+" "+window.Beatport.user.name.last)+"&orders="+encodeURIComponent(window.Beatport.user.total_orders)+"&tracks="+encodeURIComponent(tracks.length));
                 } else {
                     fetch("https://hooks.zapier.com/hooks/catch/106993/oou76ox/silent/?email=&name=&orders=&tracks="+encodeURIComponent(tracks.length));
