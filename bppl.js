@@ -37,7 +37,7 @@
             var tracks=[];
 
             //TODO: Check on correct page
-            if ( document.location.href.includes('/hype-100') || document.location.href.includes('beatport.com/chart/') | document.location.href.includes('beatport.com/release/') ) {
+            if ( document.location.href.includes('/top-100') || document.location.href.includes('beatport.com/chart/') | document.location.href.includes('beatport.com/release/') ) {
                 //Get tracks from chart page
                 document.querySelectorAll('li.track').forEach(function(e){
                     tracks.push(parseInt(e.getAttribute('data-ec-id')));
